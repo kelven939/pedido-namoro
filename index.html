@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#190914">
+  <meta name="description" content="Uma mensagem especial, feita com carinho.">
+  <title>Uma pergunta para ti ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div id="hearts" aria-hidden="true"></div>
+
+  <main class="page">
+    <header class="topline">
+      <span class="tiny-heart">♥</span>
+      <span>UMA MENSAGEM DO CORAÇÃO</span>
+      <span class="tiny-heart">♥</span>
+    </header>
+
+    <section class="hero" id="inicio">
+      <div class="eyebrow"><span></span> Para alguém muito especial <span></span></div>
+      <div class="heart-art" aria-hidden="true">
+        <div class="heart-glow"></div>
+        <svg viewBox="0 0 180 165" class="big-heart" role="img" aria-label="Coração">
+          <defs>
+            <linearGradient id="heartGradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#ffb4c8"/>
+              <stop offset="48%" stop-color="#ff477e"/>
+              <stop offset="100%" stop-color="#bd164f"/>
+            </linearGradient>
+            <filter id="heartShadow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="5" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <path d="M90 151 C77 139 14 93 14 49 C14 10 62 1 90 37 C118 1 166 10 166 49 C166 93 103 139 90 151Z" fill="url(#heartGradient)" filter="url(#heartShadow)"/>
+          <path d="M37 40 C42 26 55 22 66 27" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".65"/>
+        </svg>
+        <span class="spark spark-a">✦</span><span class="spark spark-b">✧</span><span class="spark spark-c">✦</span>
+      </div>
+
+      <p class="overline">Tenho algo para te dizer…</p>
+      <h1>Há pessoas que<br>chegam e tornam tudo <em>mais bonito.</em></h1>
+      <p class="intro">E, de alguma forma, tu conseguiste fazer isso comigo.</p>
+      <button class="primary-button" id="startButton">Descobre a minha mensagem <span>↓</span></button>
+      <div class="scroll-note"><span class="scroll-line"></span> DESLIZA COM CARINHO <span class="scroll-line"></span></div>
+    </section>
+
+    <section class="story section-hidden" id="mensagem">
+      <div class="section-number">01 <span>—</span> O QUE SINTO</div>
+      <div class="story-card">
+        <span class="quote-mark">“</span>
+        <p class="story-text">Não sei exactamente em que momento aconteceu, mas comecei a sorrir só de pensar em ti. As conversas ficaram mais especiais, os pequenos momentos ganharam outro significado e, sem dar conta, foste ocupando um lugar bonito nos meus pensamentos.</p>
+        <div class="signature-line"></div>
+        <p class="signature">Uma verdade que vem do coração <span>♥</span></p>
+      </div>
+      <div class="little-note"><span>✦</span> Não é sobre encontrar alguém perfeito. É sobre encontrar alguém que torne a vida mais bonita.</div>
+    </section>
+
+    <section class="reasons section-hidden" id="detalhes">
+      <div class="section-number">02 <span>—</span> PORQUÊ TU?</div>
+      <h2>Porque há algo em ti<br>que me faz <em>bem.</em></h2>
+      <div class="reason-grid">
+        <article class="reason-card"><span class="reason-icon">☼</span><h3>O teu brilho</h3><p>Há uma luz tua que torna os dias mais leves.</p></article>
+        <article class="reason-card"><span class="reason-icon">♡</span><h3>A tua presença</h3><p>Até as coisas simples ganham outro valor.</p></article>
+        <article class="reason-card"><span class="reason-icon">✧</span><h3>O que podemos ser</h3><p>Imagino uma história bonita, construída a dois.</p></article>
+      </div>
+    </section>
+
+    <section class="proposal section-hidden" id="pedido">
+      <div class="section-number">03 <span>—</span> A PERGUNTA</div>
+      <div class="proposal-card">
+        <div class="proposal-top">UMA PERGUNTA, UM DESEJO, UM NOVO COMEÇO</div>
+        <div class="ring">♡</div>
+        <p class="proposal-intro">Quero continuar a conhecer-te, cuidar do que estamos a construir e partilhar contigo momentos que valham a pena.</p>
+        <h2>Queres namorar<br><em>comigo?</em></h2>
+        <p class="proposal-sub">Prometo sinceridade, respeito, carinho e vontade de fazer dar certo. ❤️</p>
+        <div class="buttons">
+          <button class="yes-button" id="yesButton">SIM, ACEITO! <span>♥</span></button>
+          <button class="think-button" id="thinkButton">Quero pensar um bocadinho</button>
+        </div>
+        <p class="small-print" id="responseText">Seja qual for a tua resposta, obrigado por leres algo tão sincero.</p>
+      </div>
+      <footer>FEITO COM CARINHO, POR <strong>KELVEN BULHA</strong> <span>♥</span></footer>
+    </section>
+  </main>
+
+  <div class="modal" id="successModal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-heart">♥</div>
+      <p class="eyebrow">O MEU CORAÇÃO ESTÁ A SORRIR</p>
+      <h2>Que comece a<br><em>nossa história!</em></h2>
+      <p>O próximo passo é enviar a tua resposta pelo WhatsApp. ❤️</p>
+      <button class="primary-button" id="whatsappButton">Enviar o meu SIM <span>↗</span></button>
+      <button class="close-modal" id="closeModal">Voltar à página</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
